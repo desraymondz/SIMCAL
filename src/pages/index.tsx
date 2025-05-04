@@ -6,14 +6,12 @@ export default function Home() {
 
   const handleSubmit = async () => {
     setLoading(true);
-    console.log("Schedule Text:", scheduleText);
     try {
       const res = await fetch("/api/generate-ics", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: scheduleText }),
       });
-      // console.log("Response Body:", await res.text());
 
       if (!res.ok) {
         throw new Error("Failed to generate .ics file");
@@ -30,7 +28,6 @@ export default function Home() {
       a.remove();
       // window.URL.revokeObjectURL(url);
     } catch (err) {
-      console.error("Error:", err);
       alert("Something went wrong while generating the calendar file.");
     } finally {
       setLoading(false);
