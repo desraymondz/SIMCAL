@@ -1,23 +1,23 @@
-export type Schedule = {
-    day: string,
-    start_time: string,
-    end_time: string,
-    classroom: string,
-    lecturer: string,
-    date: string,
-}
+// Import types
+import { Schedule } from "@/types/schedule-type";
+import { Module } from "@/types/module-type";
 
-export type Module = {
-    module_name: string,
-    class_number: string,
-    schedules: Schedule[];
-}
+// Converting input to an array of Module object
+export default function parse_input(input: string): Module[] {
+    console.log("--Inside parse_input function--");
+    console.log("parse_input Input type:", typeof input);
+    
+    // Ensure input is a string
+    if (typeof input !== 'string') {
+        input = String(input);
+        console.log("parse_input Converted input type:", typeof input);
+    }
 
-export default function parse_input(input: string) {
     const lines = input.split('\n');
     const input_len = input.length;
     const module_splitter = 'Status	Units	Grading'
 
+    // Function to parse a single module
     function parse_one_module(start_i: number, end_i: number): Module {
         const module_name = lines[start_i];
         const class_number = lines[start_i + 7];

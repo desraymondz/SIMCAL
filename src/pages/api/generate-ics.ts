@@ -1,13 +1,40 @@
-import type { Module, Schedule } from "./parse-input";
-import parse_input from "./parse-input";
+import { Module } from "../../types/module-type";
+import parse_input from "../../utils/parse-input";
 
-function generate_ics(input: string) {
-    const modules: Module[] = parse_input(input);
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-    return modules;
+// Response type to be sent back to the client
+type ResponseData = {
+    message: string;
 }
 
-const example_input = `MICHELLE CHAN
+export default function generate_ics(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
+    
+    const message: string = req.body.message;
+
+    // Convert modules into 
+    const modules: Module[] = parse_input(message);
+
+    return res.status(200).json({ 
+        message: message,
+    })
+    
+    // // Check the input type
+    // console.log("generate_ics Input type:", typeof input);
+
+    // // Ensure input is a string
+    // if (typeof input !== 'string') {
+    //     // Convert to string if it's not already a string
+    //     input = String(input);
+    //     console.log("generate_ics Converted input type:", typeof input);
+    // }
+
+    // const modules: Module[] = parse_input(input);
+
+    // return modules;
+}
+
+const example_input: string = `MICHELLE CHAN
 2025 Quarter (Apr-Jun) > Undergraduate > University of Wollongong
 CSCI 235 - Database Systems
 Status	Units	Grading
@@ -269,6 +296,12 @@ Vesak Day
 12/05/2025
 Hari Raya Haji
 07/06/2025
-Return to Personalised Timetable`
+Return to Personalised Timetable`;
 
-console.log(generate_ics(example_input))
+// Test the function with example input
+// try {
+//     const result = generate_ics(example_input);
+//     console.log("generate_ics Successfully processed:", result);
+// } catch (error) {
+//     console.error("generate_ics Error processing input:", error);
+// }
