@@ -10,7 +10,7 @@ export default function Home() {
       const res = await fetch("/api/generate-ics", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ scheduleText }),
+        body: JSON.stringify({ message: scheduleText }),
       });
 
       if (!res.ok) {
@@ -26,8 +26,8 @@ export default function Home() {
       document.body.appendChild(a);
       a.click();
       a.remove();
+      // window.URL.revokeObjectURL(url);
     } catch (err) {
-      console.error("Error:", err);
       alert("Something went wrong while generating the calendar file.");
     } finally {
       setLoading(false);
