@@ -12,6 +12,7 @@ export default function parse_input(input: string): Module[] {
     const lines = input.split('\n');
     const input_len = input.length;
     const module_splitter = 'Status	Units	Grading'
+    const holiday_splitter = 'Description	Date'
 
     // Function to parse a single module
     function parse_one_module(start_i: number, end_i: number): Module {
@@ -51,14 +52,14 @@ export default function parse_input(input: string): Module[] {
 
     let module_indexes: number[] = [];
     for (let i = 0; i < input_len; i++) {
-        if (lines[i] === module_splitter) {
+        if (lines[i] === module_splitter || lines[i] === holiday_splitter) {
             module_indexes.push(i - 1)
         }
     }
 
     const modules: Module[] = [];
-    for (let i = 0; i < module_indexes.length - 1; i++) {
-        modules.push(parse_one_module(module_indexes[i], module_indexes[i + 1] - 1))
+    for (let i = 0; i < module_indexes.length; i++) {
+        modules.push(parse_one_module(module_indexes[i], module_indexes[i + 1] - 1));
     }
 
     return modules;
