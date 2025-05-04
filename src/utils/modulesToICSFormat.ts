@@ -21,7 +21,6 @@ export default function modulesToICSFormat(modules: Module[]): string {
     }
 
     icsContent += "END:VCALENDAR";
-    console.log("ICS Content:", icsContent);
     
     return icsContent;
 }

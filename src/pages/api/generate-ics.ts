@@ -1,11 +1,10 @@
 import { Module } from "../../types/module-type";
-import { ResponseData } from "../../types/responseData-type";
 import parse_input from "../../utils/parse-input";
 import modulesToICSFormat from "../../utils/modulesToICSFormat";
 
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default function generate_ics(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
+export default function generate_ics(req: NextApiRequest, res: NextApiResponse) {
     
     // Incoming request
     const message: string = req.body.message;
@@ -16,26 +15,11 @@ export default function generate_ics(req: NextApiRequest, res: NextApiResponse<R
 
     // Convert modules to ics format string
     const icsString: string = modulesToICSFormat(parsedInput);
-    console.log("after modulesToICSFormat:", icsString);
+    console.log("after modulesToICSFormat (final icsString):", icsString);
 
-    return res.status(200).json({ 
-        // message: message,
-        message: icsString,
-    })
-    
-    // // Check the input type
-    // console.log("generate_ics Input type:", typeof input);
-
-    // // Ensure input is a string
-    // if (typeof input !== 'string') {
-    //     // Convert to string if it's not already a string
-    //     input = String(input);
-    //     console.log("generate_ics Converted input type:", typeof input);
-    // }
-
-    // const modules: Module[] = parse_input(input);
-
-    // return modules;
+    res.setHeader('Content-Type', 'text/calendar');
+    res.setHeader('Content-Disposition', 'attachment; filename="MyLectureSchedule.ics"');
+    res.status(200).send(icsString);
 }
 
 const example_input: string = `MICHELLE CHAN
