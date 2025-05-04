@@ -1,22 +1,26 @@
 import { Module } from "../../types/module-type";
+import { ResponseData } from "../../types/responseData-type";
 import parse_input from "../../utils/parse-input";
+import modulesToICSFormat from "../../utils/modulesToICSFormat";
 
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-// Response type to be sent back to the client
-type ResponseData = {
-    message: string;
-}
-
 export default function generate_ics(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
     
+    // Incoming request
     const message: string = req.body.message;
 
-    // Convert modules into 
-    const modules: Module[] = parse_input(message);
+    // Parse the input
+    const parsedInput: Module[] = parse_input(message);
+    console.log("after parse_input:", parsedInput);
+
+    // Convert modules to ics format string
+    const icsString: string = modulesToICSFormat(parsedInput);
+    console.log("after modulesToICSFormat:", icsString);
 
     return res.status(200).json({ 
-        message: message,
+        // message: message,
+        message: icsString,
     })
     
     // // Check the input type

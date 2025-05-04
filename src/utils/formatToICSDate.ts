@@ -1,8 +1,16 @@
 export default function formatToICSDate(date: string, time: string): string {
-    // Convert to 24-hour time
-    const [timePart, meridian] = time.match(/(\d{1,2}:\d{2})(AM|PM)/i)!.slice(1);
-    let [hour, minute] = timePart.split(":").map(Number);
+    // Extract the AM/PM part from the time string
+    const meridian: string = time.slice(-2).toUpperCase();
+    
+    // Remove the AM/PM part from the time string
+    const timePart: string = time.slice(0, -2).trim();
+    
+    // Split time into hour and minute
+    const [hourStr, minuteStr] = timePart.split(":");
+    let hour: number = parseInt(hourStr, 10);
+    const minute: number = parseInt(minuteStr, 10);
 
+    // Convert to 24-hour time
     if (meridian.toUpperCase() === "PM" && hour !== 12) {
         hour += 12;
     }

@@ -24,9 +24,11 @@ export default function parse_input(input: string): Module[] {
 
         const schedules: Schedule[] = [];
         for (let i = start_i + 9; i < end_i; i += 7) {
-            const day = lines[i].slice(0, 2);
-            const start_time = lines[i].slice(3, 8);
-            const end_time = lines[i].slice(11, 16);
+            const time_row = lines[i].split(' ');
+            const day = time_row[0];
+            const start_time = time_row[1];
+            const end_time = time_row[3];
+            
             const classroom = lines[i + 1];
             const lecturer = lines[i + 2];
             const date = lines[i + 3].slice(0, 10);

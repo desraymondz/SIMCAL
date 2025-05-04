@@ -2,7 +2,7 @@ import { Module } from "../types/module-type";
 import formatToICSDate from "./formatToICSDate";
 
 // Convert array of Module object to ICS format
-export function modulesToICSFormat(modules: Module[]): string {
+export default function modulesToICSFormat(modules: Module[]): string {
     let icsContent = "BEGIN:VCALENDAR\nVERSION:2.0\n";
 
     for (const module of modules) {

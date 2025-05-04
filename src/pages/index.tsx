@@ -17,9 +17,9 @@ export default function Home() {
       console.log("Response Headers:", res.headers.get("Content-Type"));
       console.log("Response Body:", await res.text());
 
-      if (!res.ok) {
-        throw new Error("Failed to generate .ics file");
-      }
+      // if (!res.ok) {
+      //   throw new Error("Failed to generate .ics file");
+      // }
 
       // const blob = await res.blob();
       // const url = window.URL.createObjectURL(blob);
