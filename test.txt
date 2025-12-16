@@ -1,0 +1,300 @@
+MICHELLE CHAN
+2026 Quarter (Jan-Mar) > Undergraduate > University of Wollongong
+CSCI 218 - Foundations of AI
+Status	Units	Grading
+Enrolled
+6.00
+Not Include in GPA
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+1415
+L01
+Lecture
+Sa 08:30 - 11:30
+HQ BLK A LT A.1.09A
+LI, WANQING
+17/01/2026 - 17/01/2026
+ 
+ 	
+ 
+Sa 12:00 - 15:00
+HQ BLK A LT A.1.09A
+LI, WANQING
+17/01/2026 - 17/01/2026
+ 
+ 	
+ 
+Mo 15:30 - 18:30
+HQ BLK A LT A.1.09A
+LI, WANQING
+19/01/2026 - 19/01/2026
+ 
+ 	
+ 
+Tu 15:30 - 18:30
+HQ BLK A LT A.1.17
+LI, WANQING
+20/01/2026 - 20/01/2026
+ 
+ 	
+ 
+Th 15:30 - 18:30
+HQ BLK A LT A.1.09B
+LI, WANQING
+22/01/2026 - 22/01/2026
+ 
+ 	
+ 
+Sa 08:30 - 11:30
+HQ BLK A LT A.1.17
+LI, WANQING
+24/01/2026 - 24/01/2026
+ 
+ 	
+ 
+Sa 12:00 - 15:00
+HQ BLK A LT A.1.17
+LI, WANQING
+24/01/2026 - 24/01/2026
+1417
+T01
+Tutorial
+Tu 12:00 - 15:00
+HQ BLK B SR.B.4.08
+LIM CHER ENG
+20/01/2026 - 20/01/2026
+ 
+ 	
+ 
+Fr 08:30 - 11:30
+HQ BLK B LAB B.5.15
+LIM CHER ENG
+23/01/2026 - 23/01/2026
+ 
+ 	
+ 
+We 08:30 - 11:30
+HQ BLK A LAB A.5.17C/A.5.17D
+LIM CHER ENG
+28/01/2026 - 28/01/2026
+ 
+ 	
+ 
+We 08:30 - 11:30
+HQ BLK A LAB A.5.17A/A.5.17B
+LIM CHER ENG
+04/02/2026 - 04/02/2026
+ 
+ 	
+ 
+Sa 08:30 - 11:30
+HQ BLK A LAB A.5.17A/A.5.17B
+LIM CHER ENG
+07/02/2026 - 07/02/2026
+ 
+ 	
+ 
+Sa 08:30 - 11:30
+HQ BLK A LAB A.5.17A/A.5.17B
+LIM CHER ENG
+14/02/2026 - 14/02/2026
+ 
+ 	
+ 
+Sa 08:30 - 11:30
+HQ BLK B LAB B.5.15
+LIM CHER ENG
+21/02/2026 - 21/02/2026
+ 
+ 	
+ 
+We 08:30 - 11:30
+HQ BLK A LAB A.5.14/A.5.15
+LIM CHER ENG
+25/02/2026 - 25/02/2026
+CSCI 316 - Big Data Mining Tech & Impl
+Status	Units	Grading
+Enrolled
+6.00
+Not Include in GPA
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+1014
+L01
+Lecture
+Sa 08:30 - 11:30
+HQ BLK A LT A.1.17
+SU, GUOXIN
+03/01/2026 - 03/01/2026
+ 
+ 	
+ 
+Sa 12:00 - 15:00
+HQ BLK A LT A.1.17
+SU, GUOXIN
+03/01/2026 - 03/01/2026
+ 
+ 	
+ 
+Mo 15:30 - 18:30
+HQ BLK B LT B.2.06
+SU, GUOXIN
+05/01/2026 - 05/01/2026
+ 
+ 	
+ 
+Tu 15:30 - 18:30
+HQ BLK B LT B.2.06
+SU, GUOXIN
+06/01/2026 - 06/01/2026
+ 
+ 	
+ 
+Th 15:30 - 18:30
+HQ BLK B LT B.2.03
+SU, GUOXIN
+08/01/2026 - 08/01/2026
+ 
+ 	
+ 
+Sa 08:30 - 11:30
+HQ BLK A LT A.1.17
+SU, GUOXIN
+10/01/2026 - 10/01/2026
+ 
+ 	
+ 
+Sa 12:00 - 15:00
+HQ BLK A LT A.1.17
+SU, GUOXIN
+10/01/2026 - 10/01/2026
+1018
+W01
+Practicum
+Fr 19:00 - 22:00
+HQ BLK B LT B.4.17
+SIONGGO JAPIT
+02/01/2026 - 02/01/2026
+ 
+ 	
+ 
+We 19:00 - 22:00
+HQ BLK B LT B.4.17
+SIONGGO JAPIT
+07/01/2026 - 07/01/2026
+1589
+T03F
+Tutorial
+Th 12:00 - 15:00
+HQ BLK B LAB B.5.15
+Staff
+15/01/2026 - 15/01/2026
+ 
+ 	
+ 
+Th 12:00 - 15:00
+HQ BLK B LAB.B.5.15
+SIONGGO JAPIT
+15/01/2026 - 15/01/2026
+ 
+ 	
+ 
+Th 08:30 - 11:30
+HQ BLK A LAB.A.5.14/A.5.15
+SIONGGO JAPIT
+22/01/2026 - 22/01/2026
+ 
+ 	
+ 
+Th 08:00 - 11:00
+HQ BLK A LAB A.5.14/A.5.15
+SIONGGO JAPIT
+22/01/2026 - 22/01/2026
+ 
+ 	
+ 
+Tu 15:30 - 18:30
+HQ BLK B LAB.B.4.15
+SIONGGO JAPIT
+27/01/2026 - 27/01/2026
+ 
+ 	
+ 
+Tu 15:30 - 18:30
+HQ BLK B LAB B.4.15
+Staff
+27/01/2026 - 27/01/2026
+ 
+ 	
+ 
+Th 12:00 - 15:00
+HQ BLK B LAB B.5.15
+Staff
+29/01/2026 - 29/01/2026
+ 
+ 	
+ 
+Th 12:00 - 15:00
+HQ BLK B LAB.B.5.15
+SIONGGO JAPIT
+05/02/2026 - 05/02/2026
+ 
+ 	
+ 
+Th 12:00 - 15:00
+HQ BLK B LAB B.5.15
+Staff
+05/02/2026 - 05/02/2026
+ 
+ 	
+ 
+Tu 15:30 - 18:30
+HQ BLK B LAB.B.4.15
+SIONGGO JAPIT
+10/02/2026 - 10/02/2026
+ 
+ 	
+ 
+Tu 15:30 - 18:30
+HQ BLK B LAB B.4.15
+Staff
+10/02/2026 - 10/02/2026
+ 
+ 	
+ 
+Th 15:30 - 18:30
+HQ BLK A LAB.A.5.14/A.5.15
+SIONGGO JAPIT
+12/02/2026 - 12/02/2026
+ 
+ 	
+ 
+Th 15:30 - 18:30
+HQ BLK A LAB A.5.14/A.5.15
+Staff
+12/02/2026 - 12/02/2026
+ 
+ 	
+ 
+Tu 08:30 - 11:30
+HQ BLK A LAB A.5.17A/A.5.17B
+Staff
+24/02/2026 - 24/02/2026
+ 
+ 	
+ 
+Tu 08:30 - 11:30
+HQ BLK A LAB.A.5.17A/A.5.17B
+SIONGGO JAPIT
+24/02/2026 - 24/02/2026
+Public Holidays
+Description	Date
+New Year's day
+01/01/2026
+SIM Shutdown Chinese New Year
+16/02/2026
+Chinese New Year
+17/02/2026
+Chinese New Year
+18/02/2026
+Hari Raya Puasa
+21/03/2026
+Return to Personalised Timetable
