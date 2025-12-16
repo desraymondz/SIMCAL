@@ -27,14 +27,36 @@ export default function parse_input(input: string): Module[] {
 
         const schedules: Schedule[] = [];
         for (let i = start_i + 9; i < end_i; i += 4) {
-            const time_row = lines[i].split(' ');
+            // Validate that we have enough lines
+            if (i + 3 >= lines.length) {
+                break;
+            }
+
+            const time_row = lines[i].split(' ').filter(s => s.length > 0);
+            
+            // Validate time row format: should have at least day, start_time, "-", end_time
+            if (time_row.length < 4 || time_row[2] !== '-') {
+                continue; // Skip invalid entries
+            }
+
             const day = time_row[0];
             const start_time = time_row[1];
             const end_time = time_row[3];
             
-            const classroom = lines[i + 1];
-            const lecturer = lines[i + 2];
-            const date = lines[i + 3].slice(0, 10);
+            // Validate that times exist and are in correct format
+            if (!start_time || !end_time || !start_time.includes(':') || !end_time.includes(':')) {
+                continue; // Skip invalid entries
+            }
+            
+            const classroom = lines[i + 1] || '';
+            const lecturer = lines[i + 2] || '';
+            const dateLine = lines[i + 3] || '';
+            const date = dateLine.slice(0, 10);
+
+            // Validate date format
+            if (!date || !date.includes('/')) {
+                continue; // Skip invalid entries
+            }
 
             const schedule: Schedule = {
                 day,
